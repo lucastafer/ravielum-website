@@ -25,6 +25,7 @@ const MuiSwiper = () => {
       <Box
         sx={{
           paddingTop: 12,
+          maxWidth: "100%",
           ".css-15q1o67-MuiPaper-root-MuiCard-root": {
             boxShadow: 0,
           },

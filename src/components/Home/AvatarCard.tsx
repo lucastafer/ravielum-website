@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Avatar,
-  Box,
-  Card,
-  CardContent,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Avatar, Box, Typography } from "@mui/material";
 
 interface Props {
   icon: JSX.Element;

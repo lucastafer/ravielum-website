@@ -1,14 +1,16 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  IconButton,
+  Menu,
+  MenuItem,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import ravielum from "../assets/appbar-logo.png";
 
 const pages = ["Home", "About Us", "Services", "Contact"];
@@ -27,12 +29,12 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ background: "#000" }}>
+    <AppBar position="sticky" sx={{ background: "#000" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box
             sx={{
-              display: { sx: "none", md: "flex" },
+              display: { xs: "none", md: "flex" },
               alignItems: "center",
               justifyContent: "space-between",
               flex: 1.5,
@@ -49,6 +51,7 @@ const Navbar = () => {
           >
             {pages.map((page) => (
               <Button
+                href={`#${page}`}
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{
