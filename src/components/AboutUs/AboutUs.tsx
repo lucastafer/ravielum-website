@@ -13,7 +13,6 @@ const AboutUs = () => {
       position="relative"
     >
       <Card
-        id="About Us"
         sx={{
           background: "#fff",
           boxShadow: "#00C2CB 5px 20px 30px 5px;",

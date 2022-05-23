@@ -24,7 +24,6 @@ const MuiSwiper = () => {
     <>
       <Box
         sx={{
-          paddingTop: 12,
           maxWidth: "100%",
           ".css-15q1o67-MuiPaper-root-MuiCard-root": {
             boxShadow: 0,
@@ -39,7 +38,7 @@ const MuiSwiper = () => {
           spaceBetween={30}
           loop={true}
           autoplay={{
-            delay: 4000,
+            delay: 500000,
             disableOnInteraction: false,
           }}
           navigation={true}
@@ -47,7 +46,14 @@ const MuiSwiper = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Box>
+            <Box
+              padding={6}
+              sx={{
+                display: "flex",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
               <Card
                 sx={{
                   background: "transparent",
@@ -61,7 +67,7 @@ const MuiSwiper = () => {
                   <Typography
                     sx={{
                       fontFamily: "Dosis",
-                      fontSize: "40px",
+                      fontSize: { xs: "30px", md: "40px" },
                       fontWeight: "300",
                       paddingBottom: "0.25rem",
                     }}
@@ -71,7 +77,7 @@ const MuiSwiper = () => {
                   <Typography
                     sx={{
                       fontFamily: "Dosis",
-                      fontSize: "50px",
+                      fontSize: { xs: "40px", md: "50px" },
                       fontWeight: "600",
                       paddingBottom: "0.25rem",
                     }}
@@ -81,7 +87,7 @@ const MuiSwiper = () => {
                   <Typography
                     sx={{
                       fontFamily: "Dosis",
-                      fontSize: "30px",
+                      fontSize: { xs: "20px", md: "30px" },
                       fontWeight: "300",
                       paddingBottom: "1.5rem",
                     }}
@@ -92,10 +98,11 @@ const MuiSwiper = () => {
                   <Button
                     variant="contained"
                     sx={{
+                      marginTop: 5,
                       background: "#00C2CB",
                       fontFamily: "Dosis",
                       fontWeight: "Bold",
-                      fontSize: "18px",
+                      fontSize: { xs: "15px", md: "18px" },
                       borderRadius: 5,
                       "&:hover": {
                         background: "#02a6ad",
@@ -110,7 +117,7 @@ const MuiSwiper = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <Box>
+            <Box padding={6}>
               <Card
                 sx={{
                   background: "transparent",
@@ -124,7 +131,7 @@ const MuiSwiper = () => {
                   <Typography
                     sx={{
                       fontFamily: "Dosis",
-                      fontSize: "50px",
+                      fontSize: { xs: "38px", md: "50px" },
                       fontWeight: "600",
                       paddingBottom: "0.25rem",
                     }}
@@ -133,6 +140,7 @@ const MuiSwiper = () => {
                   </Typography>
 
                   <Stack
+                    display={{ xs: "none", sm: "flex" }}
                     paddingTop={3}
                     justifyContent="space-between"
                     flexDirection="row"
@@ -145,23 +153,60 @@ const MuiSwiper = () => {
                       icon={<FaShippingFast />}
                       message="Vantagens com rapidez e pontualidade"
                     />
+
                     <AvatarCard
                       icon={<AiOutlineSafetyCertificate />}
-                      message="Segurança e facilidade no processo porta-a-porta"
+                      message="Segurança e facilidade"
                     />
 
                     <AvatarCard
                       icon={<MdTrackChanges />}
-                      message="Acompanhamento do processo em tempo real em nossa plataforma"
+                      message="Acompanhamento do processo em nossa plataforma"
+                    />
+                  </Stack>
+
+                  {/*Mobile */}
+
+                  <Stack
+                    display={{ xs: "flex", sm: "none" }}
+                    paddingTop={3}
+                    justifyContent="space-between"
+                    flexDirection="row"
+                  >
+                    <AvatarCard
+                      icon={<MdPriceCheck />}
+                      message="Reduza seus custos logísticos"
+                    />
+                    <AvatarCard
+                      icon={<FaShippingFast />}
+                      message="Rapidez e pontualidade"
+                    />
+                  </Stack>
+                  <Stack
+                    display={{ xs: "flex", sm: "none" }}
+                    paddingTop={3}
+                    justifyContent="space-between"
+                    flexDirection="row"
+                  >
+                    <AvatarCard
+                      icon={<AiOutlineSafetyCertificate />}
+                      message="Segurança e facilidade"
+                    />
+
+                    <AvatarCard
+                      icon={<MdTrackChanges />}
+                      message="Rastreio em nossa plataforma"
                     />
                   </Stack>
                   <Button
+                    id="About Us"
                     variant="contained"
                     sx={{
+                      marginBottom: 3,
                       background: "#00C2CB",
                       fontFamily: "Dosis",
                       fontWeight: "Bold",
-                      fontSize: "18px",
+                      fontSize: { xs: "15px", md: "18px" },
                       borderRadius: 5,
                       "&:hover": {
                         background: "#02a6ad",

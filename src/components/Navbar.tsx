@@ -83,6 +83,20 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
+            <Box
+              sx={{
+                display: { xs: "flex", md: "none" },
+                position: "absolute",
+                top: 0,
+                right: 0,
+                bottom: 0,
+                alignItems: "center",
+                justifyContent: "space-between",
+                flex: 1,
+              }}
+            >
+              <img src={ravielum} alt="Logo" width={"250px"} />
+            </Box>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -103,7 +117,9 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Button href={`#${page}`} sx={{ color: "#00C2CB" }}>
+                    {page}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
