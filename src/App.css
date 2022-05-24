@@ -7,3 +7,18 @@
 html{
     scroll-behavior: smooth;
 }
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00C2CB;
+    border-radius: 30px;
+}
