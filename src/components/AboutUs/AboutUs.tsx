@@ -3,6 +3,7 @@ import LandingContainer from "../Container";
 import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
 import map from "../../assets/map.png";
 import ship from "../../assets/ship.jpg";
+import truck from "../../assets/truck.jpeg";
 
 const AboutUs = () => {
   return (
@@ -16,7 +17,8 @@ const AboutUs = () => {
       <Card
         sx={{
           background: "#fff",
-          boxShadow: "#00C2CB 5px 20px 30px 5px;",
+          boxShadow:
+            "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
           maxWidth: "70%",
           position: "absolute",
           top: { xs: "-2%", sm: "-5%", xl: "-10%" },
@@ -90,7 +92,13 @@ const AboutUs = () => {
               alignItems: "center",
             }}
           >
-            <Box>
+            <Box
+              sx={{
+                img: {
+                  borderRadius: "2%",
+                },
+              }}
+            >
               <img src={ship} alt="Map" width="450px" />
             </Box>
             <Box paddingLeft="2rem" color="#FFF">
@@ -170,8 +178,14 @@ const AboutUs = () => {
                 reais necessidades dos nossos clientes.
               </Typography>
             </Box>
-            <Box>
-              <img src={ship} alt="Map" width="450px" />
+            <Box
+              sx={{
+                img: {
+                  borderRadius: "2%",
+                },
+              }}
+            >
+              <img src={truck} alt="Map" width="450px" />
             </Box>
           </CardContent>
         </Card>

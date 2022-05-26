@@ -12,7 +12,6 @@ const Slider = () => {
     <>
       <Box
         sx={{
-          marginTop: 30,
           maxWidth: "100%",
           ".css-15q1o67-MuiPaper-root-MuiCard-root": {
             boxShadow: 0,
@@ -45,34 +44,16 @@ const Slider = () => {
             >
               <Card
                 sx={{
-                  background: "transparent",
-                  color: "#fff",
+                  background: "#FFF",
+                  boxShadow:
+                    "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+                  color: "#000",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                 }}
               >
                 <CardContent>
-                  <Typography
-                    sx={{
-                      fontFamily: "Dosis",
-                      fontSize: { xs: "30px", md: "40px" },
-                      fontWeight: "300",
-                      paddingBottom: "0.25rem",
-                    }}
-                  >
-                    Como exportar ?
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontFamily: "Dosis",
-                      fontSize: { xs: "40px", md: "50px" },
-                      fontWeight: "600",
-                      paddingBottom: "0.25rem",
-                    }}
-                  >
-                    Rapidez e facilidade sob medida para seu negócio.
-                  </Typography>
                   <Typography
                     sx={{
                       fontFamily: "Dosis",
@@ -84,22 +65,6 @@ const Slider = () => {
                     Especialistas em frete internacional expresso, com o menor
                     custo e sem complicações.
                   </Typography>
-                  <Button
-                    variant="contained"
-                    sx={{
-                      marginTop: 5,
-                      background: "#00C2CB",
-                      fontFamily: "Dosis",
-                      fontWeight: "Bold",
-                      fontSize: { xs: "15px", md: "18px" },
-                      borderRadius: 5,
-                      "&:hover": {
-                        background: "#02a6ad",
-                      },
-                    }}
-                  >
-                    Faça uma cotação
-                  </Button>
                 </CardContent>
               </Card>
             </Box>
