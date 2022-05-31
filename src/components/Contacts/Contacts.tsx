@@ -61,11 +61,26 @@ const Contacts = (props: Props) => {
               maxWidth: "100%",
             }}
           >
-            <SocialMediaIcon icon={<WhatsAppIcon />} link="" />
-            <SocialMediaIcon icon={<InstagramIcon />} link="" />
-            <SocialMediaIcon icon={<FacebookIcon />} link="" />
-            <SocialMediaIcon icon={<LinkedInIcon />} link="" />
-            <SocialMediaIcon icon={<EmailIcon />} link="" />
+            <SocialMediaIcon
+              icon={<WhatsAppIcon />}
+              link="https://wa.me/5519988237706"
+            />
+            <SocialMediaIcon
+              icon={<InstagramIcon />}
+              link="https://www.instagram.com/"
+            />
+            <SocialMediaIcon
+              icon={<FacebookIcon />}
+              link="https://www.facebook.com/"
+            />
+            <SocialMediaIcon
+              icon={<LinkedInIcon />}
+              link="https://www.linkedin.com/feed/"
+            />
+            <SocialMediaIcon
+              icon={<EmailIcon />}
+              link="mailto: lucastafer.dev@gmail.com"
+            />
           </Box>
           <Typography
             sx={{
