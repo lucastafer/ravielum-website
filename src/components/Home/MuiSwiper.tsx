@@ -72,7 +72,7 @@ const MuiSwiper = () => {
                       paddingBottom: "0.25rem",
                     }}
                   >
-                    Como exportar ?
+                    How to export ?
                   </Typography>
                   <Typography
                     sx={{
@@ -82,7 +82,7 @@ const MuiSwiper = () => {
                       paddingBottom: "0.25rem",
                     }}
                   >
-                    Rapidez e facilidade sob medida para seu negócio.
+                    Your business faster and easier.
                   </Typography>
                   <Typography
                     sx={{
@@ -92,10 +92,13 @@ const MuiSwiper = () => {
                       paddingBottom: "1.5rem",
                     }}
                   >
-                    Especialistas em frete internacional expresso, com o menor
-                    custo e sem complicações.
+                    Specialists in International Express Shipping, at the lowest
+                    cost and without any complication
                   </Typography>
+
                   <Button
+                    href="https://wa.me/5519988237706"
+                    target="_blank"
                     variant="contained"
                     sx={{
                       marginTop: 5,
@@ -109,7 +112,7 @@ const MuiSwiper = () => {
                       },
                     }}
                   >
-                    Faça uma cotação
+                    Request budget
                   </Button>
                 </CardContent>
               </Card>
@@ -136,7 +139,8 @@ const MuiSwiper = () => {
                       paddingBottom: "0.25rem",
                     }}
                   >
-                    Otimize sua logística e amplie sua vantagem competitiva
+                    Optimize your logistics and expand your competitive
+                    advantage.
                   </Typography>
 
                   <Stack
@@ -147,21 +151,21 @@ const MuiSwiper = () => {
                   >
                     <AvatarCard
                       icon={<MdPriceCheck />}
-                      message="Reduza seus custos logísticos"
+                      message="Reduce your logistics costs"
                     />
                     <AvatarCard
                       icon={<FaShippingFast />}
-                      message="Vantagens com rapidez e pontualidade"
+                      message="Advantages with speed and punctuality"
                     />
 
                     <AvatarCard
                       icon={<AiOutlineSafetyCertificate />}
-                      message="Segurança e facilidade"
+                      message="Safety and ease"
                     />
 
                     <AvatarCard
                       icon={<MdTrackChanges />}
-                      message="Acompanhamento do processo em nossa plataforma"
+                      message="Monitoring the process on our platform"
                     />
                   </Stack>
 
@@ -175,11 +179,11 @@ const MuiSwiper = () => {
                   >
                     <AvatarCard
                       icon={<MdPriceCheck />}
-                      message="Reduza seus custos logísticos"
+                      message="Reduce your logistics costs"
                     />
                     <AvatarCard
                       icon={<FaShippingFast />}
-                      message="Rapidez e pontualidade"
+                      message="Speed and punctuality"
                     />
                   </Stack>
                   <Stack
@@ -190,31 +194,41 @@ const MuiSwiper = () => {
                   >
                     <AvatarCard
                       icon={<AiOutlineSafetyCertificate />}
-                      message="Segurança e facilidade"
+                      message="Safety and ease"
                     />
 
                     <AvatarCard
                       icon={<MdTrackChanges />}
-                      message="Rastreio em nossa plataforma"
+                      message="Tracking on our platform"
                     />
                   </Stack>
-                  <Button
-                    id="About Us"
-                    variant="contained"
+                  <Box
                     sx={{
-                      marginBottom: 3,
-                      background: "#00C2CB",
-                      fontFamily: "Dosis",
-                      fontWeight: "Bold",
-                      fontSize: { xs: "15px", md: "18px" },
-                      borderRadius: 5,
-                      "&:hover": {
-                        background: "#02a6ad",
-                      },
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: { sx: "center", md: "left" },
                     }}
                   >
-                    Fale com um especialista
-                  </Button>
+                    <Button
+                      href="https://wa.me/5519988237706"
+                      target="_blank"
+                      id="About Us"
+                      variant="contained"
+                      sx={{
+                        marginBottom: 3,
+                        background: "#00C2CB",
+                        fontFamily: "Dosis",
+                        fontWeight: "Bold",
+                        fontSize: { xs: "15px", md: "18px" },
+                        borderRadius: 5,
+                        "&:hover": {
+                          background: "#02a6ad",
+                        },
+                      }}
+                    >
+                      Talk to an expert
+                    </Button>
+                  </Box>
                 </CardContent>
               </Card>
             </Box>

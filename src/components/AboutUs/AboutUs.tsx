@@ -8,7 +8,7 @@ import truck from "../../assets/truck.jpeg";
 const AboutUs = () => {
   return (
     <LandingContainer
-      minHeight="93vh"
+      minHeight="80vh"
       backgroundImage={`linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.9))`}
       backgroundPosition="center"
       backgroundSize="cover"
@@ -48,8 +48,8 @@ const AboutUs = () => {
                 paddingBottom: "0.5rem",
               }}
             >
-              Alta performance e excelência no agenciamento de sua carga da
-              origem até o endereço final, sem demora e sem burocracia
+              High performance and excellence in freight forwarding from sender
+              to the final address, without delay or paperwork
             </Typography>
             <Typography
               sx={{
@@ -59,13 +59,13 @@ const AboutUs = () => {
                 paddingBottom: "1.5rem",
               }}
             >
-              A Ravielum Logistics une produtos a consumidores desde 2019. Não
-              importa o tamanho ou o volume da sua operação, conectamos o seu
-              negócio a um mercado globalizado com previsibilidade e economia.
-              Graças a nossa ampla experiência e estrutura completa em logística
-              internacional, proporcionamos serviços de alta qualidade e
-              confiabilidade, buscando compreender e atender as reais
-              necessidades dos nossos clientes.
+              Ravielum Logistics has been delivering goods to consumers since
+              2014. No matter the size or volume of your operation, we connect
+              your business to a global market with predictability and cost
+              saving. Thanks to our extensive experience and complete structure
+              in international logistics, we provide high quality and reliable
+              services, seeking to understand and meet the real needs of our
+              customers.
             </Typography>
           </Box>
         </CardContent>
@@ -110,24 +110,24 @@ const AboutUs = () => {
                   paddingBottom: "0.5rem",
                 }}
               >
-                Alta performance e excelência no agenciamento de sua carga da
-                origem até o endereço final, sem demora e sem burocracia
+                Discover why we are the company that evolves every day and wins
+                customers in Brazil and around the world
               </Typography>
               <Typography
                 sx={{
                   fontFamily: "Dosis",
-                  fontSize: "18px",
+                  fontSize: "22px",
                   fontWeight: "300",
                   paddingBottom: "1.5rem",
                 }}
               >
-                A Ravielum Logistics une produtos a consumidores desde 2019. Não
-                importa o tamanho ou o volume da sua operação, conectamos o seu
-                negócio a um mercado globalizado com previsibilidade e economia.
-                Graças a nossa ampla experiência e estrutura completa em
-                logística internacional, proporcionamos serviços de alta
-                qualidade e confiabilidade, buscando compreender e atender as
-                reais necessidades dos nossos clientes.
+                Don't waste any more time and get rid of any worries, because
+                with Ravielum Logistics your delivery is in good hands! Increase
+                your revenue and strengthen your position worldwide with our
+                help. We take your business wherever you want and function as a
+                foundation for exponential growth in your sales. In addition to
+                ensuring your company's autonomy and progress, we will also
+                revolutionize your customer's shopping experience.
               </Typography>
             </Box>
           </CardContent>
@@ -158,27 +158,27 @@ const AboutUs = () => {
                   paddingBottom: "0.5rem",
                 }}
               >
-                Alta performance e excelência no agenciamento de sua carga da
-                origem até o endereço final, sem demora e sem burocracia
+                You sell and we deliver: responsibility and commitment from
+                beginning to end
               </Typography>
               <Typography
                 sx={{
                   fontFamily: "Dosis",
-                  fontSize: "18px",
+                  fontSize: "22px",
                   fontWeight: "300",
                   paddingBottom: "1.5rem",
                 }}
               >
-                A Ravielum Logistics une produtos a consumidores desde 2019. Não
-                importa o tamanho ou o volume da sua operação, conectamos o seu
-                negócio a um mercado globalizado com previsibilidade e economia.
-                Graças a nossa ampla experiência e estrutura completa em
-                logística internacional, proporcionamos serviços de alta
-                qualidade e confiabilidade, buscando compreender e atender as
-                reais necessidades dos nossos clientes.
+                Count on Ravielum Logistics for the logistics operation
+                waterway, air or road. We prioritize the value of our services
+                to ensure the full satisfaction of our customers in all aspects.
+                We develop a relationship of trust and transparency, to provide
+                personalized deliveries through integrated support and constant
+                availability.
               </Typography>
             </Box>
             <Box
+              id="Services"
               sx={{
                 img: {
                   borderRadius: "2%",
