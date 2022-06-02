@@ -1,5 +1,5 @@
 require("dotenv").config();
-var https = require('https');
+var http = require('http');
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-const server = https.createServer(app);
+const server = http.createServer(app);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -19,4 +19,4 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const port = process.env.PORT || 5000;
-app.listen(port, console.log(`server listing to port 5000 only`));
+server.listen(port, console.log(`server listing to port 5000 only`));
