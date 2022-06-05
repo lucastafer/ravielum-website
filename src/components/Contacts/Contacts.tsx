@@ -7,6 +7,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import LocationCard from "./LocationCard";
+import korea from "../../assets/korea.png";
+import mongolia from "../../assets/mongolia.png";
 
 type Props = {};
 
@@ -22,7 +25,7 @@ const Contacts = (props: Props) => {
       <Stack
         id="Contact"
         sx={{
-          justifyContent: "space-between",
+          justifyContent: "center",
           alignItems: "center",
           flexDirection: { xs: "column", md: "row" },
           width: "100%",
@@ -82,35 +85,7 @@ const Contacts = (props: Props) => {
               link="mailto: lucastafer.dev@gmail.com"
             />
           </Box>
-          <Typography
-            sx={{
-              color: "#FFF",
-              fontFamily: "Dosis",
-              fontSize: "16px",
-              fontWeight: "400",
-              paddingBottom: "1.5rem",
-              textAlign: "center",
-            }}
-          >
-            Ravielum Logistics is a company specialized in freight forwarding,
-            logistics and international express freight that has modern
-            solutions and a large team of professionals capable of expanding the
-            reach of your company globally.
-          </Typography>
-        </Box>
 
-        <Box>
-          <Typography
-            sx={{
-              color: "#FFF",
-              fontFamily: "Dosis",
-              fontSize: "50px",
-              fontWeight: "700",
-              textAlign: "center",
-            }}
-          >
-            Let's keep in touch!
-          </Typography>
           <Typography
             sx={{
               color: "#FFF",
@@ -118,25 +93,32 @@ const Contacts = (props: Props) => {
               fontFamily: "Dosis",
               fontSize: "20px",
               fontWeight: "400",
-              paddingBottom: "1.5rem",
               textAlign: "center",
             }}
           >
-            Contact us in your favourite channel:
+            Where to find us ?
           </Typography>
+
           <Box
             sx={{
               display: "flex",
               alignItenms: "center",
-              justifyContent: "center",
-              maxWidth: "100%",
+              flexDirection: { xs: "column", md: "row" },
+              justifyContent: { xs: "center", md: "space-between" },
+              width: "100%",
+              paddingTop: 2,
+              paddingBottom: 3,
             }}
           >
-            <SocialMediaIcon icon={<WhatsAppIcon />} link="" />
-            <SocialMediaIcon icon={<InstagramIcon />} link="" />
-            <SocialMediaIcon icon={<FacebookIcon />} link="" />
-            <SocialMediaIcon icon={<LinkedInIcon />} link="" />
-            <SocialMediaIcon icon={<EmailIcon />} link="" />
+            <LocationCard
+              country={korea}
+              address="Trade Tower 511 Yeongdong-daero, Gangnam-gu, Seoul, South Korea"
+            />
+            <br />
+            <LocationCard
+              country={mongolia}
+              address="Chinggis khaan square 5, Sukhbaatar district 8, Ulaanbaatar, Mongolia, 14200, Mongolia"
+            />
           </Box>
           <Typography
             sx={{
@@ -146,6 +128,7 @@ const Contacts = (props: Props) => {
               fontWeight: "400",
               paddingBottom: "1.5rem",
               textAlign: "center",
+              maxWidth: "700px",
             }}
           >
             Ravielum Logistics is a company specialized in freight forwarding,

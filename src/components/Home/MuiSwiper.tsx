@@ -61,6 +61,7 @@ const MuiSwiper = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  boxShadow: "none",
                 }}
               >
                 <CardContent>
@@ -128,6 +129,7 @@ const MuiSwiper = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  boxShadow: "none",
                 }}
               >
                 <CardContent>

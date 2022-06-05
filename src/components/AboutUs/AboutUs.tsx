@@ -73,7 +73,8 @@ const AboutUs = () => {
 
       <Stack
         sx={{
-          paddingTop: { xs: 110, lg: 45, xl: 30 },
+          paddingTop: { xs: 130, sm: 70, lg: 45, xl: 30 },
+          boxShadow: "none",
         }}
       >
         <Card
@@ -82,6 +83,7 @@ const AboutUs = () => {
             maxWidth: "100%",
             position: "relative",
             margin: "auto",
+            boxShadow: "none",
           }}
         >
           <CardContent
@@ -139,6 +141,7 @@ const AboutUs = () => {
             maxWidth: "100%",
             position: "relative",
             margin: "auto",
+            boxShadow: "none",
           }}
         >
           <CardContent
